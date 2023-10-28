@@ -1,0 +1,146 @@
+.chart-container {
+    display: grid;
+    gap: 1px;
+    padding: 1px;
+    border: 1px solid #63aef5;
+    border-radius: 10px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 10px;
+    align-items: center; 
+  }
+
+  .chart-row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .dashboard-heading {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .chart {
+    flex: 2;
+    width: 100%;
+  }
+
+  .chart1 {
+    flex: 1;
+    width: 100%;
+  }
+  
+  
+  .chart-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .chart-title1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #1b183f;
+  }
+  .dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .chart-column {
+    flex: 1;
+    width: 80%; /* Each chart column takes half of the row width */
+    margin-bottom: 0px;
+  }
+  .chart-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+
+  .calendar-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #201f5e;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+  }
+  
+  /* Title for the calendar */
+  .calendar-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #232469;
+  }
+  
+  /* Style for the event marker */
+  .event-marker {
+    width: 12px;
+    height: 12px;
+    background-color: #d80808; /* Customize the color */
+    border-radius: 80%;
+    margin: 0 auto;
+  }
+  /* DiseaseCalendar.css */
+
+/* ... Your previous styles ... */
+
+/* Style for the event popup */
+.event-popup {
+  position: sticky;
+  top: 50px;
+  left: 20px;
+  background-color: #ebeef5;
+  border: 2px solid #322e66;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  font-family: sans-serif;
+  font-style: oblique;
+}
+.popup-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  position: center;
+  align-items: center;
+}
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.sidenav {
+  background-color: #222;
+  color: white;
+  width: 250px;
+  padding: 1rem;
+}
+.content-wrapper {
+  margin-left: 250px;
+  padding: 2rem;
+}
+
+.refresh-button {
+  background-color: #4093eb;
+  color: rgb(238, 238, 240);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.refresh-button:hover {
+  background-color: #b7c9dd;
+}

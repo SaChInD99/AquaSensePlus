@@ -1,0 +1,173 @@
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto; /* Center the table horizontally */
+    background-color: #ffffff; /* Background color for the table */
+    border: 1px solid #ddd; /* Border around the table */
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+ 
+  a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+/* Style for the "View" button */
+.view-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
+
+.content-wrapper1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center content */
+  /* justify-content: center; Vertically center content */
+  height: 100vh; /* Set height to fill viewport */
+}
+
+h1 {
+  margin-bottom: 1px; /* Add some spacing below the title */
+} 
+
+
+.delete-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+}
+
+.confirm-button, .cancel-button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #1f3c4e;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.cancel-button {
+  background-color: #5bc0de;
+  color: #fff;
+  border-radius: 10px;
+}
+
+
+.delete-button {
+  background-color: #1f3c4e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.delete-button:hover {
+  background-color: #255969;
+}
+
+/* Add these styles for rounded checkboxes */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-checkmark {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.checkbox-container:hover input ~ .checkbox-checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkbox-checkmark {
+  background-color: #2196F3;
+}
+
+.checkbox-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkbox-checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkbox-checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

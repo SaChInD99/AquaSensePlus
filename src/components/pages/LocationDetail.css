@@ -1,0 +1,283 @@
+
+
+/* Style for the small box */
+/* .small-box {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+  
+  } */
+  .small-box1 {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 25px;
+    border-radius: 10px;
+    border: rgb(39, 59, 66);
+    box-shadow: 10px 10px 20px rgba(29, 112, 207, 0.315);
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: row; /* Set the direction to row for horizontal alignment */
+    justify-content: space-between; 
+    /* align-items: center; 
+     text-align: center;    */
+  }
+  
+  .small-box:hover {
+    background-color: #bdd7ee31;
+  }
+  
+  /* Style for the image wrapper */
+  .image-wrapper {
+    margin-right: -5px; /* Add spacing between image and right corner */
+  }
+  
+  .image-wrapper1 {
+    margin-right: -5px; /* Add spacing between image and right corner */
+  }
+  /* Style for the image */
+  .small-box-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .animation-element {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the color and opacity */
+    opacity: 0;
+    transform: scale(0); /* Initial scale for animation */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Prevent interaction with the element */
+  }
+  
+  .small-box:hover .animation-element {
+    opacity: 1;
+    transform: scale(1); /* Scale up on hover */
+  }
+  
+
+.small-box-inner {
+  display: flex;
+  align-items: center;
+}
+
+.small-box-icon {
+  flex: 0 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 24px;
+  color: #666;
+}
+
+.small-box-content {
+  flex: 1;
+}
+
+.small-box-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.small-box-value {
+  margin: 5px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.small-box-footer {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.small-box-footer:hover {
+  color: #666;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-message {
+  font-size: 30px;
+  color: #050a25;
+} 
+.loading-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+/* LocationDetail.css */
+
+.content-wrapper {
+  padding: 20px;
+}
+
+.charts-container {
+  margin-bottom: 20px;
+}
+
+.small-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: navy;
+  box-shadow: 10px 10px 10px rgba(29, 146, 255, 0.219);
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+}
+
+.small-box p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.small-box h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #1f1d1d;
+}
+
+.small-box-footer {
+  color: #777;
+  text-decoration: none;
+}
+
+.weather-widget,
+.forecast-widget {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.weather-widget h3,
+.forecast-widget h3 {
+  margin-top: 0;
+  color: #4364c0;
+}
+
+.weather-widget p,
+.forecast-widget p {
+  color: #1a0a33;
+}
+
+.forecast-item {
+  margin-bottom: 5px;
+  padding-bottom: 1px;
+  width: 358px;
+  height: 200px;
+  color: #28355a;
+  border-bottom: 1px solid #ddd;
+  gap: 10px;
+}
+
+.weather-forecast-wrapper {
+  display: flex;
+  height: 300px; /* Set your desired height */
+  width: 300px;
+  
+}
+
+.fixed-size {
+  height: 300px; /* Set your desired height */
+  width: 1400px; /* Set your desired width */
+  overflow: auto; /* Add scrollbars if content exceeds container size */
+}
+.forecast-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px; /* Adjust the gap size as needed */
+}
+
+.event-marker {
+  background-color: #ff5733; /* Adjust color as needed */
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* Styles for the event popup */
+/* CSS for the event popup */
+.event-popup {
+  background-color: #fff; /* Background color for the popup */
+  border: 3px solid #ddd; /* Border color */
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
+  z-index: 1000;
+  width: 350px; /* Adjust the width as needed */
+}
+
+.popup-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #771a1ae3; /* Text color */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Style for individual event details */
+.event-detail {
+  margin-bottom: 10px;
+}
+
+.event-detail strong {
+  font-weight: bold;
+}
+
+.event-detail p {
+  margin: 0;
+}
+
+/* Close button style */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888; /* Close button color */
+}
+
+.close-button:hover {
+  color: #333; /* Hover color */
+}
+
+
+
+
